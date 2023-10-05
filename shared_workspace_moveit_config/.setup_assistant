@@ -1,0 +1,26 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: shared_workspace_description
+    relative_path: urdf/shared_workspace.urdf.xacro
+    xacro_args: ur_type:=ur20 robot_ip:=0.0.0.0
+  srdf:
+    relative_path: config/shared_workspace.srdf
+  package_settings:
+    author_name: Felix Durchdewald
+    author_email: Durchdewald@fzi.de
+    generated_timestamp: 1696274090
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
