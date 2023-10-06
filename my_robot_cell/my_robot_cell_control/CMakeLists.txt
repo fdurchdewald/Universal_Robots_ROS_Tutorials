@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(shared_workspace_control)
+project(my_robot_cell_control)
 
 find_package(ament_cmake REQUIRED)
 

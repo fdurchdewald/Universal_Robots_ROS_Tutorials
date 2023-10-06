@@ -7,10 +7,10 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import (Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution)
 
 def generate_launch_description():
-    control_package = FindPackageShare("shared_workspace_control")
+    control_package = FindPackageShare("my_robot_cell_control")
     update_rate_config_file = PathJoinSubstitution([control_package, "config", "update_rate.yaml"])
     controllers_file = PathJoinSubstitution([control_package, "config", "ros2_controllers.yaml"])
-    robot_calibration_file= PathJoinSubstitution([control_package, "config", "ur20_calibration.yaml"])
+    robot_calibration_file= PathJoinSubstitution([control_package, "config", "default_kinematics.yaml"])
 
     description_package = FindPackageShare("shared_workspace_description")
     description_file = PathJoinSubstitution([description_package, "urdf", "shared_workspace.urdf.xacro"])
