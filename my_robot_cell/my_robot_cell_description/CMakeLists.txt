@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
-project(shared_workspace_description)
+project(my_robot_cell_description)
 
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch meshes rviz urdf config
+  DIRECTORY launch meshes rviz urdf
   DESTINATION share/${PROJECT_NAME}
 )
 

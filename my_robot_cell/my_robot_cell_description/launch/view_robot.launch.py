@@ -9,8 +9,8 @@ from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
-    urdf_path = get_package_share_path('shared_workspace_description')
-    default_model_path = urdf_path / 'urdf/shared_workspace.urdf.xacro'
+    urdf_path = get_package_share_path('my_robot_cell_description')
+    default_model_path = urdf_path / 'urdf/my_robot_cell.urdf.xacro'
     default_rviz_config_path = urdf_path / 'rviz/urdf.rviz'
 
     gui_arg = DeclareLaunchArgument(name='gui', default_value='true', choices=['true', 'false'],
