@@ -11,4 +11,4 @@ Those examples explain certain use cases in which the `ur_robot_driver <http://w
 
    installation
    dual_robot
-   custom_workspace/toc
+   my_robot_cell/toc
