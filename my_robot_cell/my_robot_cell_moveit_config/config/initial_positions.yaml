@@ -1,4 +1,4 @@
-# Default initial positions for shared_workspace's ros2_control fake system
+# Default initial positions for my_robot_cell's ros2_control fake system
 
 initial_positions:
   ur20_elbow_joint: 0

@@ -1,10 +1,10 @@
 moveit_setup_assistant_config:
   urdf:
-    package: shared_workspace_description
-    relative_path: urdf/shared_workspace.urdf.xacro
+    package: my_robot_cell_description
+    relative_path: urdf/my_robot_cell.urdf.xacro
     xacro_args: ur_type:=ur20 robot_ip:=0.0.0.0
   srdf:
-    relative_path: config/shared_workspace.srdf
+    relative_path: config/my_robot_cell.srdf
   package_settings:
     author_name: Felix Durchdewald
     author_email: Durchdewald@fzi.de
