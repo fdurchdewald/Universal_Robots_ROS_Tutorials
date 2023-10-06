@@ -44,10 +44,10 @@ After **Step 14**, where we generated the MoveIt Config, we need to manually ass
 One of these files is named ros2_controllers.yaml and should contain the same contents as the ros2_controllers file in the Launch package.
 The second file, called moveit_controllers.yaml, specifies which controller MoveIt uses for its trajectory planning and could look something like this:
 
-.. literalinclude:: ../../../../../shared_workspace/shared_workspace_moveit_config/config/moveit_controllers.yaml
+.. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_moveit_config/config/moveit_controllers.yaml
     :language: yaml
     :linenos:
-    :caption: shared_workspace_moveit_config/config/moveit_controllers.yaml
+    :caption: my_robot_cell_moveit_config/config/moveit_controllers.yaml
 
 In our example MoveIt uses the scaled_joint_trajectory_controller.
 
@@ -56,7 +56,7 @@ We can start the move_group node by running the launch file the setup assitant c
 
 .. code-block:: bash
 
-    ros2 launch shared_workspace_moveit_config move_group.launch.py
+    ros2 launch my_robot_cell_moveit_config move_group.launch.py
 
 If everything went well you should see the output: **"You can start planning now!"**.
 
@@ -64,5 +64,5 @@ You can simply try it out by launching the RViz node and planning some trajector
 
 .. code-block:: bash
 
-    ros2 launch shared_workspace_moveit_config moveit_rviz.launch.py
+    ros2 launch my_robot_cell_moveit_config moveit_rviz.launch.py
 
