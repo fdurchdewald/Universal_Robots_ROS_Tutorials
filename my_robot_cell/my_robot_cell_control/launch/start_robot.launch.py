@@ -12,8 +12,8 @@ def generate_launch_description():
     controllers_file = PathJoinSubstitution([control_package, "config", "ros2_controllers.yaml"])
     robot_calibration_file= PathJoinSubstitution([control_package, "config", "default_kinematics.yaml"])
 
-    description_package = FindPackageShare("shared_workspace_description")
-    description_file = PathJoinSubstitution([description_package, "urdf", "shared_workspace.urdf.xacro"])
+    description_package = FindPackageShare("my_robot_cell_description")
+    description_file = PathJoinSubstitution([description_package, "urdf", "my_robot_cell.urdf.xacro"])
 
     ur_description_package = FindPackageShare("ur_description")
     joint_limits_file = PathJoinSubstitution([ur_description_package, "config", "ur20", "joint_limits.yaml"])
