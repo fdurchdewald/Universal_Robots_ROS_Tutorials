@@ -23,14 +23,14 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package://my_robot_cell_description/meshes/171005_Motek_Tisch.dae"/>
+        <mesh filename="package://my_robot_cell_description/meshes/fzi_table.dae"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0.75 0.5 -1"/>
     </visual>
     <material name="black"/>
     <collision>
       <geometry>
-        <mesh filename="package://my_robot_cell_description/meshes/171005_Motek_Tisch.dae"/>
+        <mesh filename="package://my_robot_cell_description/meshes/fzi_table.dae"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0.75 0.5 -1"/>
     </collision>
@@ -97,7 +97,7 @@
     output_recipe_filename="$(arg ur_output_recipe_filename)"
     input_recipe_filename="$(arg ur_input_recipe_filename)"
   >
-    <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+    <origin xyz="0 -0.05 0" rpy="0 0 ${pi}" />
   </xacro:ur_robot>
 
 </robot>
