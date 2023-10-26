@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(shared_workspace_moveit_config)
+project(my_robot_cell_moveit_config)
 
 find_package(ament_cmake REQUIRED)
 
