@@ -61,20 +61,20 @@
   <link name="wall">
     <visual>
       <geometry>
-        <box size="3 0.1 2.5"/>
+        <mesh filename="package://my_robot_cell_description/meshes/wall.dae"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <geometry>
-        <box size="3 0.1 2.5"/>
+        <box size="4.44 0.1 2.5"/>
       </geometry>
     </collision>
   </link>
   <joint name="base_to_wall" type="fixed">
     <parent link="base_link"/>
     <child link="wall"/>
-    <origin xyz="0.75 1.5 0.5"/>
+    <origin xyz="1.25 1.5 0.5"/>
   </joint>
 
   <link name="robot_position"/>
