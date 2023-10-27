@@ -27,9 +27,17 @@ def generate_launch_description():
     ur_input_recipe_filename = PathJoinSubstitution([ur_robot_driver_package, "resources", "rtde_input_recipe.txt"])
     ur_output_recipe_filename = PathJoinSubstitution([ur_robot_driver_package, "resources", "rtde_output_recipe.txt"])
 
+    arg_ur_type = DeclareLaunchArgument(
+        "ur_type",
+        description="Type/series of used UR robot.",
+        choices=["ur3", "ur3e", "ur5", "ur5e", "ur10", "ur10e", "ur16e", "ur20"],
+        )
+    
+    ur_type = LaunchConfiguration("ur_type")
+
     arg_robot_ip = DeclareLaunchArgument(
         "robot_ip",
-        default_value="192.168.0.161",
+        default_value="yyy.yyy.yyy.yyy",
         )
     robot_ip = LaunchConfiguration("robot_ip")
 
@@ -42,6 +50,7 @@ def generate_launch_description():
     declared_arguments = [
         arg_robot_ip,
         arg_controller_spawner_timeout,
+        arg_ur_type,
     ]
 
 
@@ -50,6 +59,9 @@ def generate_launch_description():
             FindExecutable(name="xacro"),
             " ",
             description_file,
+            " ",
+            "name:=",
+            ur_type,
             " ",
             "robot_ip:=",
             robot_ip,
@@ -135,7 +147,6 @@ def generate_launch_description():
             + inactive_flag
             + ["--controller-manager-timeout", controller_spawner_timeout],
         )
-
 
     return LaunchDescription(
         declared_arguments
