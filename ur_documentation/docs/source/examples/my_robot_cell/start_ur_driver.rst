@@ -27,7 +27,7 @@ Next, we need to define all the arguments that we intend to pass through the she
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
     :lineno-start: 30
-    :lines: 30 - 45
+    :lines: 30 - 54
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -37,8 +37,8 @@ In the next step we need to load our `custom urdf <file:///disk/users/cg247/tut/
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 48
-    :lines: 48 - 79
+    :lineno-start: 57
+    :lines: 57 - 90
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -48,8 +48,8 @@ We should begin by creating the **control node**, which requires our URDF, the u
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 81
-    :lines: 81 - 90
+    :lineno-start: 93
+    :lines: 93 - 102
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -61,8 +61,8 @@ To function properly, we should specify the **consistent controllers** that must
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 92
-    :lines: 92 - 109
+    :lineno-start: 104
+    :lines: 104 - 121
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -71,8 +71,8 @@ The **dashboard node** needs the robot ip to be started.
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 111
-    :lines: 111 - 117
+    :lineno-start: 123
+    :lines: 123 - 129
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -80,8 +80,8 @@ The **robot state publisher** needs the urdf to be started.
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 120
-    :lines: 120 - 126
+    :lineno-start: 132
+    :lines: 132 - 138
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -89,8 +89,8 @@ The last nodes we need to start are the **controller spwaners**.
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 128
-    :lines: 128 - 137
+    :lineno-start: 140
+    :lines: 140 - 149
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -100,8 +100,8 @@ Once we've determined which nodes we want to start, we can return the launch des
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
-    :lineno-start: 140
-    :lines: 140 - 155
+    :lineno-start: 151
+    :lines: 151 - 166
     :linenos: 
     :caption: my_robot_cell_control/launch/start_robot.launch.py
 
@@ -112,4 +112,4 @@ We can start the driver by running:
 .. code-block:: bash
 
     #start the driver 
-    ros2 launch my_robot_cell_control start_robot.launch.py
+    ros2 launch my_robot_cell_control start_robot.launch.py ur_type:=ur20 robot_ip:=yyy.yyy.yyy.yyy
