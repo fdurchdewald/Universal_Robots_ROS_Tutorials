@@ -41,7 +41,7 @@ The following section contains all items within the workcell that are not part o
     :linenos: 
     :caption: my_robot_cell_description/urdf/my_robot_cell.urdf.xacro
 
-This section of the URDF provides an example of what a custom workspace could resemble. Your workspace will likely vary from this one. Please feel free to modify this portion of the URDF to match your own setup. In this instance, our workspace comprises a table in front of a wall, featuring a monitor, and the **ur20** robot arm mounted on top.
+This section of the URDF provides an example of what a custom workcell could resemble. Your workspace will likely vary from this one. Please feel free to modify this portion of the URDF to match your own setup. In this instance, our workspace comprises a table in front of a wall, featuring a monitor, and the **ur20** robot arm mounted on top.
 
 The final step before generating the robot is to create its parent link.
 
