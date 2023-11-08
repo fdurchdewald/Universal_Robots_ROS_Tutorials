@@ -3,7 +3,7 @@ Assembling the URDF
 ===================
 
 The `ur_description <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description>`_ package provides `macro files <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/rolling/urdf/ur_macro.xacro>`_ to generate an instance of a Universal Robots arm.
-We'll use this to create a custom workcell with an ur20 inside: 
+We'll use this to create a custom workcell with a ur20 inside: 
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_description/urdf/my_robot_cell.urdf.xacro
     :language: xml
