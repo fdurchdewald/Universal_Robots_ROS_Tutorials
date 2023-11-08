@@ -2,7 +2,7 @@
 Start the ur_robot_driver
 =========================
 
-Now that everything is in place, we can proceed to start up a driver instance. To initialize the ``ur_robot_driver`` using our customized workspace description, we need to create a launch file.
+Now that everything is in place, we can proceed to start up a driver instance. To initialize the ``ur_robot_driver`` using our customized workcell description, we need to create a launch file.
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_control/launch/start_robot.launch.py
     :language: py
