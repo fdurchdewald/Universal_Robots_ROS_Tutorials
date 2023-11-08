@@ -63,7 +63,7 @@ After that we are finally able to actually **create the robot arm** by calling t
 
 Note that the **origin** argument is transmitted in a different manner than the other arguments.
 
-we can view our custom workspace by running:
+We can view our custom workspace by running:
 
 .. code-block:: bash
 
