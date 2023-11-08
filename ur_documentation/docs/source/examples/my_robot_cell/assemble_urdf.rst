@@ -32,7 +32,7 @@ Later, we will call the macro to create the arm. Therefore, we need to declare c
     :linenos:
     :caption: my_robot_cell_description/urdf/my_robot_cell.urdf.xacro
     
-The following section contains all items within the workspace that are not part of the robot arm. If you are not experienced in writing URDFs, you may want to refer to this  `tutorial <https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/URDF-Main.html>`_.
+The following section contains all items within the workcell that are not part of the robot arm. If you are not experienced in writing URDFs, you may want to refer to this  `tutorial <https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/URDF-Main.html>`_.
 
 .. literalinclude:: ../../../../../my_robot_cell/my_robot_cell_description/urdf/my_robot_cell.urdf.xacro
     :language: xml
