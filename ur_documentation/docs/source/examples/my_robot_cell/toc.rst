@@ -1,5 +1,5 @@
 ================
-Costum workspace
+Costum workcell
 ================
 
 Example about integrating an UR arm into a custom workspace. 
