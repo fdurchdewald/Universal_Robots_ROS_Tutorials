@@ -112,4 +112,4 @@ We can start the driver by running:
 .. code-block:: bash
 
     #start the driver 
-    ros2 launch my_robot_cell_control start_robot.launch.py ur_type:=ur20 robot_ip:=yyy.yyy.yyy.yyy
+    ros2 launch my_robot_cell_control start_robot.launch.py ur_type:=ur20 robot_ip:=192.168.56.101
