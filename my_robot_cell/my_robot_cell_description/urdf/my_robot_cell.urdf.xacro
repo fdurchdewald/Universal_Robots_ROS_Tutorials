@@ -27,7 +27,6 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0.75 0.5 -1"/>
     </visual>
-    <material name="black"/>
     <collision>
       <geometry>
         <mesh filename="package://my_robot_cell_description/meshes/fzi_table.dae"/>
