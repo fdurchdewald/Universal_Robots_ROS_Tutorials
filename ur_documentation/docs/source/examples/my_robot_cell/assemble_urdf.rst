@@ -70,7 +70,7 @@ we can view our custom workspace by running:
     #launch rviz
     ros2 launch my_robot_cell_description view_workspace.launch.py
 
-Use the sliders of the joint_state_puplisher_gui to move the virtual robot around.
+Use the sliders of the ``joint_state_puplisher_gui`` to move the virtual robot around.
 It should look something like this:
 
 .. image:: view_workspace.png
